@@ -49,7 +49,6 @@ app.get('/users', async (req, res) => {
   }
 });
 
-app.listen(port, async () => {
-  await initDB();
+app.listen(port, () => {
   console.log(` Serveur démarré sur http://localhost:${port}`);
 });
